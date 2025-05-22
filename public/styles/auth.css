@@ -1,0 +1,70 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Учитываем высоту шапки и подвала */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.auth-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto; /* Центрирование формы */
+}
+
+.auth-form h1 {
+  text-align: center;
+  color: #ff7f50;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 12px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-submit:hover {
+  background: #e67347;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.auth-link a {
+  color: #ff7f50;
+  text-decoration: none;
+}

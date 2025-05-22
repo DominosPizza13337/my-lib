@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Lib | <%= title %></title>
+  <link rel="stylesheet" href="/styles/header_styles.css">
+  <link rel="stylesheet" href="/styles/main_styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <%- include('partials/header') %>
+
+    <main>
+      <h1 class="text_header"><%= title %></h1>
+      <span class="book-count">(<%= count %> книг)</span>
+
+      <div class="cards">
+        <% books.forEach(book => { %>
+          <div class="card">
+            <img src="<%= book.cover %>" alt="<%= book.title %>" class="book_img">
+            <div class="description">
+              <h3><%= book.title.length > 15 ? book.title.slice(0, 15) + '...' : book.title %></h3>
+              <p><%= book.author %></p>
+              <div class="open_and_install">
+                <a href="<%= book.link %>" class="opener">Открыть</a>
+                <a href="<%= book.link %>" download>
+                  <img src="/pics/download_icon.png" width="30" alt="Скачать">
+                </a>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </main>
+  </div>
+  <script src="/scripts/search.js"></script>
+</body>
+</html>
