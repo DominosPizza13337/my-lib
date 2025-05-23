@@ -4,11 +4,11 @@
   <%- include('partials/head') %>
   <title>Вход | My Lib</title>
   <style>
-    /* Дополнительное центрирование */
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      margin: 0;
     }
     
     main {
@@ -19,7 +19,8 @@
   </style>
 </head>
 <body>
-  <%- include('partials/header') %>
+  <%# Передаем user=null в header %>
+  <%- include('partials/header', {user: null}) %>
 
   <main class="auth-container">
     <div class="auth-form">

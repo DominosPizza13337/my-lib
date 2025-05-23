@@ -1,5 +1,0 @@
-npm install express ejs express-session (устрановка зависимости)
-node app.js (старт сервера)
-http://localhost:3000 (открыть сайт)
-cd C:\Users\taras\Desktop\my-lib (ПОИСК ЕБУЧЕЙ ПАПКИ ЖАЛКО ЧТО НЕ МАМКИ СУКА)
-gaykaeb123@gmail.com
