@@ -1,0 +1,30 @@
+{
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'Build complete'"
+  },
+  "name": "my-lib",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominosPizza13337/my-lib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominosPizza13337/my-lib/issues"
+  },
+  "homepage": "https://github.com/DominosPizza13337/my-lib#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "path": "^0.12.7"
+  }
+}

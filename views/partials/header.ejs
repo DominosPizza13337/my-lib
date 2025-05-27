@@ -1,0 +1,38 @@
+<header>
+  <div class="logo">
+    <img class="logo_img" src="/pics/My_Lib_logo.png" alt="My Lib">
+  </div>
+
+  <div class="header_links_container">
+    <a href="/" class="header_link">Все книги</a>
+    <a href="/russian" class="header_link">Отечественная литература</a>
+    <a href="/foreign" class="header_link">Зарубежная литература</a>
+  </div>
+
+  <div class="search">
+  <form action="/search" method="GET">
+    <input type="text" name="query" placeholder="Поиск книг..." id="searchInput" required minlength="2">
+    <button class="header_button" type="submit"></button>
+  </form>
+</div>
+
+ <div class="auth_buttons">
+    <% if (user) { %>
+      <div class="account_dropdown">
+        <button class="account_btn">
+          <i class="fas fa-user"></i>
+          <%= user.username %>
+        </button>
+        <div class="dropdown_content">
+          <a href="/logout">Выйти</a>
+        </div>
+      </div>
+    <% } else { %>
+      <div id="guest_buttons">
+        <a href="/login" class="login_button">Войти</a>
+        <a href="/register" class="register_button">Регистрация</a>
+      </div>
+    <% } %>
+  </div>
+  
+</header>
